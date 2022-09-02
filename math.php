@@ -17,21 +17,21 @@ class Math
 
         if (is_numeric($num1) && is_numeric($num2)) {
 
-            if ($operation == "+") {
+            if ($operation === "+") {
                 addition($num1, $num2);
             }
 
-            elseif ($operation == "-") {
+            elseif ($operation === "-") {
                 subtraction($num1, $num2);
             }
 
             elseif
-            ($operation == "/") {
+            ($operation === "/") {
                 divided($num1, $num2);
             }
 
             elseif
-            ($operation == "*") {
+            ($operation === "*") {
                 multiplication($num1, $num2);
             }
 
@@ -43,21 +43,25 @@ class Math
     public function addition($num1, $num2)
     {
         $result = $num1 + $num2;
+        return $result;
     }
 
     public function subtraction($num1, $num2)
     {
         $result = $num1 - $num2;
+        return $result;
     }
 
     public function divided($num1, $num2)
     {
         $result = $num1 / $num2;
+        return $result;
     }
 
     public function multiplication($num1, $num2)
     {
         $result = $num1 * $num2;
+        return $result;
     }
 
 }
