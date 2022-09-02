@@ -28,6 +28,9 @@ class Math
 
     public function calculation()
     {
+        $num1= null;
+        $num2= null;
+
         if (isset($_POST["submit"])) {
             $operation = $_POST ["operation"];
             $num1 = $_POST["number1"];
