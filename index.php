@@ -79,6 +79,8 @@ use math\Math;
         </div>
     </form>
 
+    <h2 class="my_result"><b>Výsledek:</h2>
+
    <?php
    $math= new Math();
    $math-> calculation();
