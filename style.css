@@ -20,7 +20,7 @@
     text-align: center;
     color: blue;
     margin-bottom: 30px;
-    margin-left:100px;
+    margin-left: 100px;
 }
 
 .form-check {
@@ -50,7 +50,7 @@
     transition: 2s;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background: #073477;
 }
 
@@ -74,3 +74,4 @@
         padding-left: 30px;
         padding-right: 30px;
     }
+}
