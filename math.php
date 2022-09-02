@@ -30,6 +30,8 @@ class Math
     {
         $num1= null;
         $num2= null;
+        $result=null;
+        $operation=null;
 
         if (isset($_POST["submit"])) {
             $operation = $_POST ["operation"];
@@ -43,25 +45,29 @@ class Math
         if (is_numeric($num1) && is_numeric($num2)) {
 
             if ($operation === "+") {
-                $this->addition($num1, $num2);
+                 return $this->addition($num1, $num2);
+
             }
 
             elseif ($operation === "-") {
-                $this->subtraction($num1, $num2);
+                 return $this->subtraction($num1, $num2);
+
             }
 
             elseif ($operation === "/") {
-                $this->divided($num1, $num2);
+                return $this->divided($num1, $num2);
+
             }
 
             elseif ($operation === "*") {
-                $this->multiplication($num1, $num2);
+                return $this->multiplication($num1, $num2);
             }
 
         }
 
         else {
-             $result = "Zadejte pouze čísla";
+             return "Zadejte pouze čísla";
+
         }
     }
 }
