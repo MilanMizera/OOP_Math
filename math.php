@@ -4,6 +4,28 @@ namespace math;
 
 class Math
 {
+    public function addition($num1, $num2)
+    {
+        return $num1 + $num2;
+
+    }
+
+    public function subtraction($num1, $num2)
+    {
+        return $num1 - $num2;
+
+    }
+
+    public function divided($num1, $num2)
+    {
+        return $num1 / $num2;
+    }
+
+    public function multiplication($num1, $num2)
+    {
+        return $num1 * $num2;
+    }
+
     public function calculation()
     {
         if (isset($_POST["submit"])) {
@@ -25,43 +47,18 @@ class Math
                 subtraction($num1, $num2);
             }
 
-            elseif
-            ($operation === "/") {
+            elseif ($operation === "/") {
                 divided($num1, $num2);
             }
 
-            elseif
-            ($operation === "*") {
+            elseif ($operation === "*") {
                 multiplication($num1, $num2);
             }
 
-        } else {
+        }
+
+        else {
             $result = "Zadejte pouze čísla";
         }
     }
-
-    public function addition($num1, $num2)
-    {
-        $result = $num1 + $num2;
-        return $result;
-    }
-
-    public function subtraction($num1, $num2)
-    {
-        $result = $num1 - $num2;
-        return $result;
-    }
-
-    public function divided($num1, $num2)
-    {
-        $result = $num1 / $num2;
-        return $result;
-    }
-
-    public function multiplication($num1, $num2)
-    {
-        $result = $num1 * $num2;
-        return $result;
-    }
-
 }
