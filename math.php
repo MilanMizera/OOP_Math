@@ -4,7 +4,7 @@ namespace math;
 
 class Math
 {
-    public function catchNumbers()
+    public function calculation()
     {
         if (isset($_POST["submit"])) {
             $operation = $_POST ["operation"];
