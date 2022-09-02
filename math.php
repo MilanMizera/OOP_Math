@@ -43,25 +43,25 @@ class Math
         if (is_numeric($num1) && is_numeric($num2)) {
 
             if ($operation === "+") {
-                addition($num1, $num2);
+                $this->addition($num1, $num2);
             }
 
             elseif ($operation === "-") {
-                subtraction($num1, $num2);
+                $this->subtraction($num1, $num2);
             }
 
             elseif ($operation === "/") {
-                divided($num1, $num2);
+                $this->divided($num1, $num2);
             }
 
             elseif ($operation === "*") {
-                multiplication($num1, $num2);
+                $this->multiplication($num1, $num2);
             }
 
         }
 
         else {
-            $result = "Zadejte pouze čísla";
+             $result = "Zadejte pouze čísla";
         }
     }
 }
