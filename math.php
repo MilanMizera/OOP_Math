@@ -4,24 +4,24 @@ namespace math;
 
 class Math
 {
-    public function addition($num1, $num2)
+     public function addition($num1, $num2)
     {
         return $num1 + $num2;
 
     }
 
-    public function subtraction($num1, $num2)
+    private function subtraction($num1, $num2)
     {
         return $num1 - $num2;
 
     }
 
-    public function divided($num1, $num2)
+    private function divided($num1, $num2)
     {
         return $num1 / $num2;
     }
 
-    public function multiplication($num1, $num2)
+    private function multiplication($num1, $num2)
     {
         return $num1 * $num2;
     }

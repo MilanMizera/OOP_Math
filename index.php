@@ -13,7 +13,9 @@
           integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
-<?php require_once ("math.php");
+<?php
+require_once("math.php");
+
 use math\Math;
 ?>
 <div class="calculator_container">
@@ -41,7 +43,8 @@ use math\Math;
                 <legend class="col-form-label col-sm-2 pt-0"></legend>
                 <div class="col-sm-10">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="operation" id="gridRadios1" value="+" checked>
+                        <input class="form-check-input" type="radio" name="operation" id="gridRadios1" value="+"
+                               checked>
                         <label class="form-check-label" for="gridRadios1">
                             Sčítání +
                         </label>
@@ -80,13 +83,11 @@ use math\Math;
     </form>
 
     <?php
-    $math= new Math();
-    $math-> calculation();
+    $math = new Math();
+    $math->calculation();
     ?>
 
-    <h2 class="my_result"><b>Výsledek:<?="$math->result"?></b></h2>
-
-
+    <h2 class="my_result"><b>Výsledek:</b></h2>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
