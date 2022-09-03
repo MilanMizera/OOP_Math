@@ -78,13 +78,13 @@ use math\Math;
             </div>
         </div>
     </form>
+
     <?php
     $math= new Math();
     $math-> calculation();
-    $math->result;
-
     ?>
-    <h2 class="my_result"><b>Výsledek:<?=" "?></b><?= $math->result ?></h2>
+
+    <h2 class="my_result"><b>Výsledek:<?="$math->result"?></b></h2>
 
 
 
